@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Rangkuman Percabangan JavaScript</title>
+
+    <!-- CSS INTERNAL -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0d1b2a;
+            color: #e0eafc;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: #1b263b;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #cbd5f0;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 6px;
+            font-size: 1.1em;
+            color: #90caf9;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        code {
+            background-color: #274472;
+            padding: 4px 6px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 5px;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Percabangan pada JavaScript</h1>
+    <p class="intro">
+        Percabangan adalah struktur kontrol untuk menentukan 
+        alur program berdasarkan kondisi tertentu.
+    </p>
+
+    <section>
+        <h2>1. if</h2>
+        <p>Menjalankan kode jika kondisi bernilai true.</p>
+        <code>if(kondisi){ aksi; }</code>
+    </section>
+
+    <section>
+        <h2>2. if / else</h2>
+        <p>Dua pilihan: kondisi benar atau salah.</p>
+        <code>if(kondisi){ aksi1; } else { aksi2; }</code>
+    </section>
+
+    <section>
+        <h2>3. if / else if / else</h2>
+        <p>Digunakan untuk lebih dari dua kondisi.</p>
+        <code>
+            if(k1){...} <br>
+            else if(k2){...} <br>
+            else {...}
+        </code>
+    </section>
+
+    <section>
+        <h2>4. switch / case</h2>
+        <p>Alternatif untuk banyak pilihan nilai.</p>
+        <code>
+            switch(nilai){ <br>
+            case "1": aksi; break; <br>
+            default: aksi; }
+        </code>
+    </section>
+
+    <section>
+        <h2>5. Operator Ternary</h2>
+        <p>Bentuk singkat dari if/else.</p>
+        <code>var hasil = (kondisi) ? "Benar" : "Salah";</code>
+    </section>
+
+    <section>
+        <h2>6. Nested (Bersarang)</h2>
+        <p>Percabangan di dalam percabangan lain.</p>
+        <code>
+            if(k1){ <br>
+            &nbsp;&nbsp;if(k2){ aksi; } <br>
+            }
+        </code>
+    </section>
+
+    <section>
+        <h2>Bonus: Operator Logika</h2>
+        <p>Menggunakan AND (&&) atau OR (||) untuk menyederhanakan kondisi.</p>
+        <code>if(user == "admin" && pass == "123"){ ... }</code>
+    </section>
+
+</div>
+
+</body>
+</html>
